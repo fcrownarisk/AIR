@@ -1,0 +1,22 @@
+{
+  "name": "aircraft-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Headless 6-DOF flight dynamics sandbox in TypeScript. Zero runtime dependencies.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "start": "node src/cli.ts",
+    "demo": "node src/cli.ts run takeoff --hud",
+    "test": "node --test",
+    "typecheck": "node scripts/tsc.mjs -p tsconfig.json",
+    "where": "node scripts/tsc.mjs --where"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
